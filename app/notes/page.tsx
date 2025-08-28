@@ -10,7 +10,7 @@ const Notes = async () => {
   const queryClient = new QueryClient();
   await queryClient.prefetchQuery({
     queryKey: ['notes'],
-    queryFn: () => fetchNotes(1, ''),
+    queryFn: () => fetchNotes({ page: 1, search: '' }),
   });
 
   return (

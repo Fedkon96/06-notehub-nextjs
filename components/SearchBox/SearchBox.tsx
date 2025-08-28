@@ -1,5 +1,4 @@
-import css from "./SearchBox.module.css";
-// import { toast } from "react-hot-toast";
+import css from './SearchBox.module.css';
 
 interface SearchBoxProps {
   onChange: (value: string) => void;

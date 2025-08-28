@@ -64,7 +64,6 @@ const NotesClient = () => {
         <p>Notes not found</p>
       )}
       {isLoading && !data && <Loader />}
-      {/* {isError && <ErrorMessage />} */}
       {modalIsOpen && (
         <Modal onClose={handleCloseModal}>
           <NoteForm onClose={handleCloseModal} />
